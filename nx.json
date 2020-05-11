@@ -1,0 +1,76 @@
+{
+  "npmScope": "flight-workspace",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "flight-app-e2e": {
+      "tags": ["e2e"],
+      "implicitDependencies": ["flight-app"]
+    },
+    "flight-app": {
+      "tags": ["flights"]
+    },
+    "dashboard-e2e": {
+      "tags": ["e2e"],
+      "implicitDependencies": ["dashboard"]
+    },
+    "dashboard": {
+      "tags": ["dashboard"]
+    },
+    "flight-admin-e2e": {
+      "tags": ["e2e"],
+      "implicitDependencies": ["flight-admin"]
+    },
+    "flight-admin": {
+      "tags": ["flights"]
+    },
+    "logger-lib": {
+      "tags": ["shared"]
+    },
+    "dashboard-api": {
+      "tags": ["dashboard"]
+    },
+    "external-e2e": {
+      "tags": ["e2e"],
+      "implicitDependencies": ["external"]
+    },
+    "external": {
+      "tags": ["external"]
+    },
+    "flight-api": {
+      "tags": ["flights"]
+    },
+    "luggage-domain": {
+      "tags": ["domain:luggage", "type:domain-logic"]
+    },
+    "luggage": {
+      "tags": ["domain:luggage", "type:app"]
+    },
+    "luggage-e2e": {
+      "tags": [],
+      "implicitDependencies": ["luggage"]
+    },
+    "luggage-feature-checkin": {
+      "tags": ["domain:luggage", "type:feature"]
+    },
+    "luggage-feature-report-loss": {
+      "tags": ["domain:luggage", "type:feature"]
+    },
+    "bonus-miles": {
+      "tags": []
+    }
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  }
+}

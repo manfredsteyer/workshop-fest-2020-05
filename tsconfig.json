@@ -1,0 +1,35 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es5",
+    "module": "esnext",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@my/logger-lib": ["libs/logger-lib/src/index.ts"],
+      "@flight-workspace/dashboard-api": ["libs/dashboard-api/src/index.ts"],
+      "@flight-workspace/flight-api": ["libs/flight-api/src/index.ts"],
+      "@flight-workspace/luggage/domain": ["libs/luggage/domain/src/index.ts"],
+      "@flight-workspace/luggage/feature-checkin": [
+        "libs/luggage/feature-checkin/src/index.ts"
+      ],
+      "@flight-workspace/luggage/feature-report-loss": [
+        "libs/luggage/feature-report-loss/src/index.ts"
+      ],
+      "@flight-workspace/bonus-miles": ["libs/bonus-miles/src/index.ts"],
+      "@flight-workspace/booking/domain": ["libs/booking/domain/src/index.ts"],
+      "@flight-workspace/booking/feature-search": ["libs/booking/feature-search/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
