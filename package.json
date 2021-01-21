@@ -55,7 +55,7 @@
     "angular-oauth2-oidc": "^8.0.4",
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.5.4",
-    "immer": "^6.0.3",
+    "immer": "^8.0.1",
     "ngrx-etc": "^4.1.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
